@@ -1,21 +1,27 @@
-import React, { useState } from 'react'
-import Search from './components/Search'
+import React, { useState } from "react";
+import Search from "./components/Search";
 
 function App() {
-  const [searchTerm, setSearchTerm] = useState('Search here your interest movies like spider man');
+  const [searchTerm, setSearchTerm] = useState(""); // Define state with useState
+
   return (
     <main>
       <div className="pattern">
         <div className="wrapper">
           <header>
             <img src="./hero.png" alt="hero banner" />
-            <h1>Find <span className="text-gradient">Movies</span> You'll Enjoy Without the Hassle</h1>
+            <h1>
+              Find <span className="text-gradient">Movies</span> You'll Enjoy
+              Without the Hassle
+            </h1>
           </header>
-          <Search searchTerm={searchTerm} setSearchTerm={searchTerm} />
+          {/* Pass both searchTerm and setSearchTerm as props */}
+          <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+          {/* <h1> output of search is here this how it work <span className="text-gradient">{searchTerm}</span>            </h1> */}
         </div>
       </div>
     </main>
-  )
+  );
 }
 
-export default App
+export default App;
