@@ -4,6 +4,10 @@ import MovieCard from "./components/MovieCard";
 import Spinner from "./components/Spinner";
 
 const API_BASE_URL = "https://api.themoviedb.org/3";
+console.log("Appwrite Project ID:", import.meta.env.VITE_APPWRITE_PROJECT_ID);
+console.log("Appwrite Database ID:", import.meta.env.VITE_APPWRITE_DATABASE_ID);
+console.log("Appwrite Collection ID:", import.meta.env.VITE_APPWRITE_COLLECTION_ID);
+
 
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
