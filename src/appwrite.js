@@ -4,10 +4,12 @@ const PROJECT_ID = import.meta.env.VITE_APPWRITE_PROJECT_ID;
 const DATABASE_ID = import.meta.env.VITE_APPWRITE_DATABASE_ID;
 const COLLECTION_ID = import.meta.env.VITE_APPWRITE_COLLECTION_ID;
 
-// Log environment variables to check if they are being read correctly
+/*
+Log environment variables to check if they are being read correctly
 console.log("Appwrite Project ID:", PROJECT_ID);
 console.log("Appwrite Database ID:", DATABASE_ID);
 console.log("Appwrite Collection ID:", COLLECTION_ID);
+*/
 
 const client = new Client()
   .setEndpoint('https://cloud.appwrite.io/v1')
